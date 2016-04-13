@@ -1,0 +1,27 @@
+{
+  "name": "workflow-example",
+  "version": "1.0.0",
+  "description": "Workflow example",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npm run test:lint && npm run test:unit",
+    "test:lint": "standard",
+    "test:unit": "tap --cov -R spec test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/central-node/workflow-example.git"
+  },
+  "author": "Manuel Pineda <manuel.felipe.pineda@gmail.com> (http://github.com/pin3da)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/central-node/workflow-example/issues"
+  },
+  "homepage": "https://github.com/central-node/workflow-example#readme",
+  "devDependencies": {
+    "pre-commit": "^1.1.2",
+    "standard": "^6.0.8",
+    "tap": "^5.7.1"
+  }
+}
