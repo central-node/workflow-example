@@ -1,7 +1,8 @@
 var tap = require('tap')
-var fun = require('../local/pin3da')
+var fun1 = require('../local/pin3da')
 
 tap.test("testing pin3da's module", function (t) {
   t.plan(1)
-  t.ok(fun(5, 6), 60)
+  // Note: this line didn't do what it was intended to do so I changed it!
+  t.equal(fun1(5, 6), 60)
 })
